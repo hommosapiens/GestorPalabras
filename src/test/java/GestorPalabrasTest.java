@@ -27,6 +27,22 @@ public class GestorPalabrasTest {
         assertTrue(gest.esPalindromo("  Somos    o no somos") );
         assertTrue(gest.esPalindromo(" Anita  lava   la  tina  ") );
     }
+     @Test
+    public void invertirLaPalabra() {
+        GestorPalabras gest = new GestorPalabras();
+        assertEquals("aloh", gest.invertirPalabra("hola"));
+        assertEquals("ALoH", gest.invertirPalabra("HoLA"));
+    }
+    
+  @Test
+    public void contarVocalesTest() {
+        GestorPalabras gest = new GestorPalabras();
+        assertEquals(2, gest.contarVocales("díos"));
+     
 
+    }
     
 }
+
+    
+

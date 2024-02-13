@@ -26,9 +26,10 @@ public class GestorPalabras {
 
     public String invertirPalabra(String palabra) {
         StringBuilder resultado = new StringBuilder();
-        for (int i = palabra.length() - 2; i >= 0; i--) {
+        for (int i = palabra.length() - 1; i >= 0; i--) {
             resultado.append(palabra.charAt(i));
         }
+        System.out.println(resultado);
         return resultado.toString();
     }
 }
